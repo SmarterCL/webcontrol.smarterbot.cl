@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf .vercel/output && mkdir -p .vercel/output/static && cp index.html .vercel/output/static/ && cp -rv public .vercel/output/static/"
   },
   "repository": {
     "type": "git",
