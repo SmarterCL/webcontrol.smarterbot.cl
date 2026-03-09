@@ -1,0 +1,30 @@
+# Smarter OS - Robots.txt
+# https://webcontrol.smarterbot.cl
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://webcontrol.smarterbot.cl/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow sensitive paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /api/

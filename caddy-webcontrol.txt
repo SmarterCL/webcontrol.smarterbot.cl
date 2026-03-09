@@ -1,0 +1,11 @@
+# ============================================
+# WEBCONTROL.SMARTERBOT.CL - Landing Page
+# ============================================
+webcontrol.smarterbot.cl {
+    reverse_proxy webcontrol-smarterbot:3000
+    encode gzip
+    log {
+        output file /var/log/caddy/webcontrol-access.log
+        level INFO
+    }
+}
